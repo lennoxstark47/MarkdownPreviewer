@@ -76,11 +76,14 @@ And here. | Okay. | I think we get it.
 				style={{
 					textAlign: 'center',
 					width: '800px',
+					fontFamily: 'Roboto',
 				}}>
 				<div>
 					<FormGroup controlId='formControlsTextarea'>
 						<FormLabel>
-							<h4>Markdown Input</h4>
+							<h4>
+								<strong>Markdown Input</strong>
+							</h4>
 						</FormLabel>
 						<FormControl
 							rows={5}
@@ -96,9 +99,14 @@ And here. | Okay. | I think we get it.
 					style={{
 						textAlign: 'center',
 						marginBottom: '15px',
+						marginTop: '10px',
 					}}>
-					<h4>Markdown Output</h4>
-					<Card>
+					<Card bg='secondary' text='white'>
+						<Card.Header>
+							<h4>
+								<strong>Markdown Output</strong>
+							</h4>
+						</Card.Header>
 						<Card.Body>
 							<div
 								id='preview'
